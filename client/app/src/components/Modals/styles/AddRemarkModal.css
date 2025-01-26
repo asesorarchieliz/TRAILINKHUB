@@ -1,0 +1,57 @@
+.add-remark-modal h2 {
+  margin-bottom: 20px;
+}
+
+.remark-options label,
+.recommended-printer label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.add-remark-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1001; /* Ensure the content is on top */
+  max-width: 500px;
+  pointer-events: auto; /* Allow interaction with the modal content */
+}
+
+.remark-options input[type="text"] {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.recommended-printer h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-actions button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.form-actions button[type="button"] {
+  background-color: #ccc;
+  color: #000;
+}

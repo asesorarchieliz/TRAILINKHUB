@@ -1,0 +1,46 @@
+.avail-modal {
+    padding: 20px;
+    max-width: 500px;
+  }
+  
+  .avail-modal h2 {
+    margin-bottom: 10px;
+  }
+  
+  .avail-modal p {
+    margin-bottom: 20px;
+  }
+  
+  .avail-modal .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .avail-modal .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .avail-modal .form-group .input-container {
+    width: 100%; /* Adjusted width */
+  }
+  
+  .avail-modal .form-group .input-container input {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .avail-modal .avail-submit-button {
+    width: 60%;
+    padding: 10px 20px;
+    background-color: #24d05a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .avail-modal .submit-button:hover {
+    background-color: #248bd0;
+  }

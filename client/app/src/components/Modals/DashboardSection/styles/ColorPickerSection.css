@@ -1,0 +1,91 @@
+.color-picker-section {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.color-picker-section h3 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.color-type-dropdown {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hex-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hex-input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: calc(100% - 50px); /* Adjust width to accommodate the color preview */
+  box-sizing: border-box;
+}
+
+.hex-input.invalid {
+  border-color: red;
+}
+
+.color-preview {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+}
+
+.color-picker-section .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Add a small gap between buttons */
+  margin-top: 20px;
+}
+
+.color-picker-section .save-button,
+.color-picker-section .remove-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+  width: 150px; /* Set the same width for both buttons */
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.color-picker-section .remove-button {
+  background-color: #dc3545;
+}
+
+.color-picker-section .save-button:hover {
+  background-color: #0056b3;
+}
+
+.color-picker-section .remove-button:hover {
+  background-color: #c82333;
+}
+
+.color-picker-section .circle-picker {
+  margin: 0 auto !important;
+}

@@ -1,0 +1,2 @@
+web: gunicorn myproject.wsgi
+heroku run python manage.py collectstatic --noinput

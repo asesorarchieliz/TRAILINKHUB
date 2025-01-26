@@ -1,0 +1,112 @@
+.schedule-modal {
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.schedule-modal h2 {
+  text-align: center;
+}
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schedule-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.schedule-header-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.schedule-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.schedule-admin {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.schedule-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.schedule-box:hover {
+  background-color: #f0f0f0;
+}
+
+.occupied {
+  background-color: green;
+  color: white;
+}
+
+.vacant {
+  background-color: white;
+  color: black;
+}
+
+.add-user-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
+  align-self: flex-end; /* Align to the right */
+}
+
+.add-user-button:hover {
+  background-color: #218838;
+}
+
+.schedule-actions {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule-actions button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.schedule-actions button:hover {
+  background-color: #ddd;
+}

@@ -1,0 +1,27 @@
+ .logs-dashboard-section {
+    max-height: 400px; /* Set the maximum height for the logs container */
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    overflow-y: auto;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .logs-dashboard-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .logs-dashboard-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .logs-dashboard-section li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logs-dashboard-section li:last-child {
+    border-bottom: none;
+  }

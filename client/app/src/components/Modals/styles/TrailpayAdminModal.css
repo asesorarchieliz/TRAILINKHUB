@@ -1,0 +1,158 @@
+.trailpay-modal {
+  max-width: 1100px;
+  max-height: 600px;
+}
+
+.trailpay-admin-controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.trailpay-admin-controls .view-all-button,
+.trailpay-admin-controls .print-report-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.trailpay-admin-filters {
+  margin: 10px;
+}
+
+.trailpay-admin-filters button {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.trailpay-admin-filters button.active {
+  background-color: #4682b4;
+  color: white;
+}
+
+.trailpay-admin-filters button:hover {
+  background-color: #4682b4;
+}
+
+.trailpay-admin-controls .view-all-button:hover,
+.trailpay-admin-controls .print-report-button:hover {
+  background-color: #0056b3;
+}
+
+.trailpay-admin-tabs {
+  margin-bottom: 10px;
+}
+
+.trailpay-admin-controls .trailpay-date-picker-modal {
+  margin-right: 10px;
+}
+
+.trailpay-admin-controls .search-input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.trailpay-admin-table-container {
+  max-height: 280px;
+  overflow-y: auto;
+  position: relative; /* Add relative positioning */
+}
+
+.trailpay-admin-view-table-container {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.trailpay-admin-table {
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  border-collapse: collapse;
+}
+
+.trailpay-transaction-admin-table-container {
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.trailpay-admin-table-container table {
+  width: 100%;
+  height: 150px;
+  border-collapse: collapse;
+}
+
+.trailpay-admin-table-container th, .trailpay-admin-table-container td {
+  padding: 10px;
+  text-align: left;
+  border: none; /* Remove table borders */
+}
+
+.trailpay-admin-table-container th {
+  background-color: #f4f4f4;
+}
+
+.trailpay-admin-table-container tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.trailpay-action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.trailpay-action-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.trailpay-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.trailpay-dropdown-content {
+  display: none; /* Ensure dropdown content is hidden initially */
+  position: fixed; /* Change to fixed positioning */
+  background-color: #f9f9f9;
+  min-width: 160px;
+  min-height: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000; /* Ensure dropdown appears above other elements */
+  overflow: visible; /* Ensure dropdown content overflows the container */
+}
+
+.trailpay-dropdown-content .trailpay-dropdown-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.trailpay-dropdown-content .trailpay-dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.trailpay-dropdown .trailpay-action-button {
+  cursor: pointer;
+}
+
+/* Increase the width of the action column */
+.trailpay-admin-table-container th:last-child,
+.trailpay-admin-table-container td:last-child {
+  width: 200px; /* Adjust the width as needed */
+}

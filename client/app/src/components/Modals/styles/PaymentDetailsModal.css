@@ -1,0 +1,62 @@
+.payment-details-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1003;
+}
+
+.payment-details-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.payment-close-button img {
+    width: 20px;
+}
+
+.payment-details-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-image {
+    margin-right: 20px;
+    max-width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.payment-image img {
+    max-width: 100%;
+    max-height: 100%; 
+    border-radius: 8px;
+}
+
+.payment-info {
+    text-align: left;
+    width: 100%;
+}

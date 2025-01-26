@@ -1,0 +1,220 @@
+.orders-modal {
+  padding: 20px;
+  max-width: 1400px;
+  min-height: 500px;
+  overflow-y: auto;
+  overflow: hidden;
+  border-radius: 50px;
+  overflow-x: auto;
+}
+
+.document-details-column {
+  max-width: 200px; /* Adjust the width as needed */
+  word-wrap: break-word; /* Ensure long words break to fit within the column */
+  white-space: normal; /* Allow text to wrap to the next line */
+}
+
+.tabs {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.tabs button {
+  margin-right: 0;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: white;
+  color: black;
+  border-radius: 0px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.tabs button:hover {
+  background-color: #4682b4; /* Slightly darker background on hover */
+  border-bottom-color: #6cead4; /* Change bottom border color to orange on hover */
+}
+
+.tabs button.active {
+  background-color: #4682b4; /* Set background to orange */
+  color: white; /* Set text color to white */
+  border-bottom-color: #4682b4; /* Ensure bottom border is orange */
+}
+
+.table-container {
+  max-height: 350px; /* Adjust the max-height as needed */
+  min-height: 350px;
+  overflow-y: auto;
+  overflow-x: auto; /* Add horizontal scroll if needed */
+}
+
+.users-table-container {
+  max-height: 400px; /* Adjust the max-height as needed */
+  min-height: 400px;
+  max-width: 1300px;
+  min-width: 1300px;
+  overflow-y: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.orders-table th, .orders-table td {
+  padding: 12px;
+  text-align: left;
+  border: none; /* Remove table borders */
+}
+
+.orders-table th {
+  background-color: #f2f2f2;
+}
+
+.orders-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.orders-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.orders-table td div {
+  margin-bottom: 5px;
+}
+
+.order-number-header {
+  border: none;
+}
+
+.order-number {
+  border: none;
+}
+
+.order-action-link {
+  display: block;
+  color: #007bff;
+  cursor: pointer;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.approve-orders, .change-status-pickup, .change-status-completed, .refund-orders {
+  background-color: #28a745; /* Green color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-orders, .approve-selected-orders, .cancel-selected-orders, .cancel-selection {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.cancel-orders  {
+  background-color: #dc3545; /* Red color */
+}
+
+.cancel-selected-orders {
+  background-color: #28a745;
+}
+
+.cancel-selection {
+  background-color: #dc3545; /* Gray color */
+}
+
+.remark {
+  max-width: 300px;
+  color: red;
+  word-wrap: break-word; /* Ensure long words break to fit within the max width */
+}
+
+.printing-location {
+  color: green;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.action-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.actions-column {
+  width: 100px; /* Increase the width of the actions column */
+}
+
+.admin-actions-column {
+  width: 200px;
+}
+
+.orders-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.orders-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: -160px;
+}
+
+.orders-dropdown-content .orders-dropdown-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.orders-dropdown-content .orders-dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.orders-dropdown .action-button {
+  cursor: pointer;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}

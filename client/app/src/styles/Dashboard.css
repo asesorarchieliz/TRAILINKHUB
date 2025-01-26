@@ -1,0 +1,227 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.dashboard-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.dashboard-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit; /* Use the same background color as the container */
+  z-index: -1; /* Place it behind the content */
+}
+
+.logo-container {
+  margin-top: 10px;
+}
+
+.logo {
+  width: 600px; /* Adjust the size as needed */
+  height: auto;
+}
+
+.description {
+  margin-bottom: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; /* Add black outline to text */
+}
+
+.avail-button,
+.print-button,
+.create-voucher-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #bbd335;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.avail-button:hover,
+.print-button:hover,
+.create-voucher-button:hover {
+  background-color: #2193d6;
+}
+
+.dashboard-confirm-alert-style {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dashboard-confirm-alert-style label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.dashboard-confirm-alert-style input {
+  padding: 8px;
+  font-size: 14px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dashboard-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the modal is above other content */
+}
+
+.dashboard-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.dashboard-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dashboard-modal-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dashboard-modal-buttons button:first-child {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.dashboard-modal-buttons button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.printer-location-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.printer-location-container .description {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.printer-location-container .description p {
+  margin: 0;
+}
+
+/* New styles for the big box container */
+.big-box-container {
+  background-color: white;
+  border-radius: 50px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  margin: 20px;
+  text-align: center;
+}
+
+.dashboard-button-container {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  gap: 100px;
+}
+
+.white-box {
+  background-color: white;
+  border-radius: 50px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.avail-button, .print-button {
+  padding: 10px 20px;
+  width: 200px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.avail-button:hover, .print-button:hover {
+  background-color: #0056b3;
+}
+
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 100px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.chat-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.chat-text {
+  color: white;
+  margin-left: 10px;
+  font-size: 16px;
+}

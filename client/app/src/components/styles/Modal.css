@@ -1,0 +1,44 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the modal is on top */
+  pointer-events: none; /* Prevent interaction with elements behind the overlay */
+}
+
+.orders-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-dark background for Orders modal */
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1001; /* Ensure the content is on top */
+  pointer-events: auto; /* Allow interaction with the modal content */
+}
+
+.modal-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1002; /* Ensure the close button is on top */
+}
+
+.modal-close img {
+  width: 15px;
+  height: 15px;
+}
+
+.allow-pointer-events {
+  pointer-events: auto; /* Enable pointer events for specific modals */
+}

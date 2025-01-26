@@ -1,0 +1,219 @@
+.add-order-modal {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.add-order-modal h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.printer-options {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.printer-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.printer-option label {
+  align-items: center;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.printer-option input {
+  margin-right: 10px;
+}
+
+.printer-status {
+  margin-left: 20px;
+  font-weight: bold;
+  color: green;
+}
+
+.add-modal-form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.add-modal-form-group label {
+  width: 150px; /* Fixed width for labels */
+  text-align: left; /* Align text to the left */
+  margin-right: 20px;
+}
+
+.add-modal-form-group input,
+.add-modal-form-group select {
+  flex: 1; /* Use flex to make input fields take the remaining space */
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.add-modal-form-group div {
+  flex: 1; /* Use flex to make div take the remaining space */
+  padding: 8px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.add-submit-button {
+  width: 50%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.add-submit-button:hover {
+  background: #0056b3;
+}
+
+.add-order-button {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  padding: 10px 20px;
+  background: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-order-button:hover {
+  opacity: 0.7;
+}
+
+/* Custom file input styles */
+.add-modal-form-group input[type="file"] {
+  display: none;
+}
+
+.add-modal-form-group .custom-file-upload {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.add-modal-form-group .custom-file-upload:hover {
+  background-color: #0056b3;
+}
+
+.add-modal-form-group .image-preview {
+  margin-top: 1rem;
+}
+
+.add-modal-form-group .image-preview img {
+  max-width: 250px; /* or a percentage like 25% */
+  max-height: 250px; /* or a percentage like 25% */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.check-button {
+  width: 100px;
+  background-color: #4CAF50; 
+  border: none; 
+  color: white; 
+  padding: 10px 20px; 
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px; 
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 4px; 
+  transition: background-color 0.3s ease; 
+}
+
+.check-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.question-icon {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  margin-left: 5px;
+  cursor: pointer; 
+}
+
+.question-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the icon */
+  left: 50%;
+  margin-left: -60px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent; /* Arrow pointing down */
+}
+
+.question-icon-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.add-modal-form-group .file-input-label {
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.add-modal-form-group .file-input-label:hover {
+  background-color: #0056b3;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  text-align: center;
+}
+

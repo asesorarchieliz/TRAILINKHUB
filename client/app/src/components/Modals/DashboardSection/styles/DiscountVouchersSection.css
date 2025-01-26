@@ -1,0 +1,42 @@
+.voucher-dashboard-section {
+  max-height: 400px; /* Set the maximum height for the logs container */
+  min-height: 400px;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  overflow-y: auto;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.voucher-dashboard-section h3 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.vouchers-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.voucher-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.voucher-card p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #333;
+}
+
+.voucher-details {
+  margin-top: 10px;
+}

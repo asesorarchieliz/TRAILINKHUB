@@ -1,0 +1,88 @@
+.transaction-section-table-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.transaction-section-table-container.scrollable {
+  border: 1px solid #ccc;
+}
+
+.remark-text {
+  color: red;
+  font-size: small;
+  margin-top: 5px;
+}
+
+.transaction-filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 0; /* Remove space between buttons */
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  width: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid black; /* Black border */
+  background-color: white;
+  color: black;
+  border-radius: 0; /* No border radius */
+  margin: 0; /* Remove margin between buttons */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.filter-button.active,
+.filter-button:hover {
+  background-color: #4682b4;
+  border-bottom-color: #4682b4;
+  color: white;
+}
+
+.transaction-section-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-section-table th, .transaction-section-table td {
+  padding: 8px;
+  text-align: left;
+  border: none; /* Remove table borders */
+}
+
+.transaction-section-table th {
+  background-color: #f2f2f2;
+}
+
+.transaction-section-table td button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.transaction-section-table td button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.transaction-section-table td button:last-child {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Add styles for images to resize them */
+.transaction-section-table img {
+  max-width: 100px;
+  max-height: 100px;
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}

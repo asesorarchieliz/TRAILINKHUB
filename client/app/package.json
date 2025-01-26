@@ -1,0 +1,63 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "app": "file:",
+    "axios": "^1.7.9",
+    "bootstrap": "^5.3.3",
+    "cloudinary": "^2.5.1",
+    "cloudinary-core": "^2.13.1",
+    "file-saver": "^2.0.5",
+    "firebase": "^11.0.2",
+    "jsqr": "^1.4.0",
+    "pdf-lib": "^1.17.1",
+    "pdf2image": "^1.2.3",
+    "pdfjs-dist": "^2.6.347",
+    "print-js": "^1.6.0",
+    "qrcode.react": "^4.1.0",
+    "react": "^18.3.1",
+    "react-color": "^2.19.3",
+    "react-confirm-alert": "^3.0.6",
+    "react-datepicker": "^7.5.0",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "react-router-dom": "^6.27.0",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.30.2",
+    "react-to-print": "^3.0.4",
+    "react-toastify": "^10.0.6",
+    "slick-carousel": "^1.8.1",
+    "tesseract.js": "^5.1.1",
+    "uuid": "^11.0.3",
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+.accounts-modal {
+  min-height: 420px;
+  max-width: 1400px;
+  border-radius: 0;
+  padding: 20px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-container input,
+.filter-container select {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.accounts-table-container {
+  max-height: 400px; /* Set the max height for the table */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.accounts-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensure the table does not exceed the container width */
+  font-size: 14px;
+}
+
+.accounts-table th,
+.accounts-table td {
+  padding: 8px;
+  max-width: 150px; /* Set a max width for table cells */
+  word-wrap: break-word; /* Ensure long words break to fit within the cell */
+  border: none; /* Remove table borders */
+}
+
+.accounts-table th {
+  background-color: #f2f2f2;
+  text-align: center; /* Center the text in table headers */
+}
+
+.accounts-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.accounts-table tr:hover {
+  background-color: #ddd;
+}
+
+.delete-button,
+.block-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.delete-button img,
+.block-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.react-confirm-alert-overlay {
+  z-index: 1002; /* Ensure it is above the modal */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #4682b4;
+  color: white;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

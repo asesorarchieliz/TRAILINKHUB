@@ -1,0 +1,246 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  margin-right: auto; /* Pushes the logo to the very left */
+}
+
+.header-left .header-logo {
+  width: 100px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image scales properly */
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the contents */
+  flex: 1; /* Allow the center section to grow */
+}
+
+.header-link {
+  margin: 0 15px;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the contents */
+  cursor: pointer;
+}
+
+.header-link:hover {
+  color: #4682b4;
+}
+
+.header-link.active {
+  color: #4682b4;
+}
+
+.header-link-how {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the contents */
+  cursor: pointer;
+}
+
+.header-link-how:hover {
+  color: #4682b4;
+}
+
+.header-icon {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 25px; /* Adjust the size as needed */
+  height: 25px; /* Adjust the size as needed */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Pushes the right section to the very right */
+}
+
+.header-divider {
+  margin: 0 10px;
+  color: black;
+}
+
+.header-signup {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  border: 1px solid skyblue;
+  background-color: skyblue;
+  border-radius: 5px;
+}
+
+.header-signup:hover {
+  background-color: red;
+  color: skyblue;
+}
+
+.header-email-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.email-icon {
+  margin-right: 5px;
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+  border-radius: 50%; /* Make the icon round */
+}
+
+.header-email {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.dropdown-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateX(-10%); /* Push the dropdown to the left */
+  background-color: white;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 200px;
+  overflow: hidden;
+  z-index: 1000;
+  display: none; /* Hide by default */
+}
+
+.dropdown-menu.show {
+  display: block; /* Show when active */
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #4682b4;
+}
+
+.dropdown-item.active {
+  color: #4682b4;
+}
+
+.logout {
+  background-color: red;
+  color: white;
+}
+
+.logout:hover {
+  background-color: darkred;
+}
+
+.how-to-use {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.how-to-use {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 80%;
+  max-width: 800px;
+}
+
+.how-to-use-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.header-close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px; 
+  z-index: 1000;
+}
+
+.slick-prev, .slick-next {
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 30px;
+  color: #000
+}
+
+.dropdown-content-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+/* Media query for tablet and smaller screens */
+@media (max-width: 768px) {
+  .header-center {
+    display: none; /* Hide the center links */
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-email-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .dropdown-menu {
+    width: 100%; /* Full width for dropdown */
+    left: 0;
+    transform: translateX(0);
+  }
+}

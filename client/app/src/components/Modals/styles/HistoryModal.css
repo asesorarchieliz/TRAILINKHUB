@@ -1,0 +1,119 @@
+.history-modal {
+  max-width: 1350px;
+}
+
+.reportorial-date-time {
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.history-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.react-datepicker__close-icon {
+  display: none;
+}
+
+.view-all-button,
+.print-report-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  margin: 5px;
+}
+
+.view-all-button:hover,
+.print-report-button:hover {
+  background-color: #45a049;
+}
+
+.history-date-picker-modal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.history-date-picker-modal .react-datepicker__input-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 200px;
+  text-align: center;
+}
+
+.date-range {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.date-range select {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  flex-grow: 1;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px;
+  text-align: left;
+  border: none; /* Remove table borders */
+}
+
+.history-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.history-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.history-table tr:hover {
+  background-color: #e9ecef;
+}
+
+.history-action-link {
+  color: #007bff;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.history-action-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,239 @@
+.logs-modal {
+  max-width: 1200px;
+  max-height: 600px;
+}
+
+.logs-modal-container {
+  display: flex;
+  height: 100%;
+  min-height: 600px; /* Ensure consistent min-height */
+}
+
+.logs-modal-sidebar {
+  width: 200px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-height: 550px;
+  border-radius: 10px;
+}
+
+.logs-modal-sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.logs-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.logs-modal-option {
+  padding: 10px 0;
+  cursor: pointer;
+  margin-bottom: 10px; /* Add margin between buttons */
+  background-color: #e9ecef; /* Add background color */
+  border-radius: 4px; /* Add border radius */
+  text-align: center; /* Center the text */
+  transition: background-color 0.3s ease;
+}
+
+.logs-modal-option:hover {
+  background-color: #d6d8db; /* Change background color on hover */
+}
+
+.logs-modal-option.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.logs-modal-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  min-height: 600px; /* Ensure consistent min-height */
+}
+
+.logs-table-container {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.logs-voucher-table-container {
+  max-height: 900px;
+  overflow-y: auto;
+}
+
+.logs-search {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.logs-search label {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.logs-search input {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.logs-table {
+  max-width: 8000px;
+  min-width: 800px;
+  border-collapse: collapse;
+}
+
+.logs-table th, .logs-table td {
+  /* border: 1px solid #dee2e6; */
+  padding: 10px;
+  text-align: left;
+}
+
+.logs-table th {
+  background-color: #f8f9fa;
+  color: black; /* Make table headers black */
+}
+
+.logs-table td {
+  font-size: 0.9em; /* Decrease font size of table contents */
+}
+
+.blue-text {
+  color: blue;
+}
+
+.green-text {
+  color: green;
+  font-weight: bold;
+  font-size: 1em; /* Adjust font size if needed */
+}
+
+.grey-text {
+  color: grey;
+}
+
+.log-book-form {
+  display: flex;
+  max-width: 8000px;
+  min-width: 800px;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center; 
+}
+
+.log-book-form-group {
+  flex: 1 1 calc(50% - 20px); /* Two inputs per line with a gap */
+  display: flex;
+  flex-direction: column;
+}
+
+.log-book-form-group label {
+  margin-bottom: 5px;
+}
+
+.log-book-form-group input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Style for the Choose File button */
+.log-book-form-group input[type="file"] {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.log-book-form button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px; /* Add some space above the button */
+  width: 200px;
+  transition: background-color 0.3s ease;
+}
+
+.log-book-form button:hover {
+  background-color: #0056b3;
+}
+
+.voucher-history-table-container {
+  max-height: 500px; /* Add max height for voucher history table */
+  overflow-y: auto;
+}
+
+.voucher-history-table {
+  max-width: 8000px;
+  min-width: 800px;
+  border-collapse: collapse;
+}
+
+.voucher-history-table th, .voucher-history-table td {
+  /* border: 1px solid #dee2e6; */
+  padding: 10px;
+  text-align: left;
+}
+
+.voucher-history-table th {
+  background-color: #f8f9fa;
+  color: black; /* Make table headers black */
+}
+
+.voucher-history-table td {
+  font-size: 0.9em; /* Decrease font size of table contents */
+}
+
+.voucher-history-table button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.voucher-history-table button:hover {
+  background-color: #0056b3;
+}
+
+.qr-code-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.qr-code-container button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.qr-code-container button:hover {
+  background-color: #0056b3;
+}
+
+.log-book-form-group select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}

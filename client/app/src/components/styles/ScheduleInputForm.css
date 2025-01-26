@@ -1,0 +1,56 @@
+.schedule-form-input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .schedule-form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .schedule-form-group label {
+    margin-right: 10px;
+    font-weight: bold;
+    width: 100px; /* Fixed width for labels */
+  }
+  
+  .schedule-form-group input {
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .schedule-button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .schedule-confirm-button, .schedule-cancel-button, .schedule-make-vacant-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .schedule-confirm-button {
+    background-color: green;
+    color: white;
+  }
+  
+  .schedule-cancel-button {
+    background-color: red;
+    color: white;
+  }
+  
+  .schedule-make-vacant-button {
+    background-color: orange;
+    color: white;
+  }
